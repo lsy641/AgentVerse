@@ -357,7 +357,7 @@ Also, you can take a look at `agentverse/tasks/tasksolving` for more experiments
 If you want to use vLLM, follow the guide [here](https://docs.vllm.ai/en/latest/getting_started/quickstart.html) to install and setup the vLLM server which is used to handle larger inference workloads. Create the following environment variables to connect to the vLLM server:
 ```bash
 export VLLM_API_KEY="your_api_key_here"
-export VLLM_API_BASE="http://your_vllm_url_here"
+export VLLM_BASE_URL="http://your_vllm_url_here"
 ```
 
 Then modify the `model` in the task config file so that it matches the model name in the vLLM server. For example:
